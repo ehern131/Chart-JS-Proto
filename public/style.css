@@ -1,12 +1,31 @@
-h1, h3 {
+h1 {
   font-family: Arial;
   font-weight: lighter;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgba(69, 69, 69, 1);
 }
 
-.GraphContainer1 {
+hr {
+  width: 54vw;
+  color: rgba(37, 37, 37, 1);
+}
+
+h3 {
+  font-family: Arial;
+  font-weight: lighter;
+  color: rgba(37, 37, 37, 1);
+}
+
+.graphContainer {
   position: relative;
   width: 54vw;
   height: 320px;
   margin: 0 auto;
   margin-top:40px;
+}
+
+#break-space {
+  margin-top: 120px;
 }
