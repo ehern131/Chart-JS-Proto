@@ -1,0 +1,12 @@
+h1, h3 {
+  font-family: Arial;
+  font-weight: lighter;
+}
+
+.GraphContainer1 {
+  position: relative;
+  width: 54vw;
+  height: 320px;
+  margin: 0 auto;
+  margin-top:40px;
+}
