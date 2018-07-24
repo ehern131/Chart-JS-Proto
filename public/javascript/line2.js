@@ -26,7 +26,7 @@ var chart = new Chart(ctx, {
         pointRadius: 3,
         fill: true,
         borderWidth: 3,
-        data:[229, 260, 330, 440, 501,529, 510, 530, 430, 401,429, 580, 530, 540, 601,529, 510, 530, 540, 601],
+        data:[229, 300, 330, 440, 501,489, 510, 530, 430, 401,336, 610, 530, 540, 601,529, 510, 530, 540, 641],
         backgroundColor: gradientStroke,
       }
     ]
@@ -35,7 +35,7 @@ var chart = new Chart(ctx, {
   options: {
     elements: {
       line: {
-        tension: .3
+        tension: .1
       }
     },
     maintainAspectRatio: false,
@@ -53,7 +53,7 @@ var chart = new Chart(ctx, {
           var multistringText = [];
           multistringText.push('Total Funded' + ': ' + '$') ;
           multistringText.push('Credit' + ': ' + '$');
-          multistringText.push('Remaining Funds' + ': ' + '$');
+          multistringText.push('Unused Approval Amount' + ': ' + '$');
           return multistringText;
         }
       }
@@ -71,7 +71,10 @@ var chart = new Chart(ctx, {
           fontStyle: "regular",
           beginAtZero: true,
           maxTicksLimit: 0,
-          padding: 20
+          padding: 20,
+          callback: function(value, index, values) {
+                        return '$' + value;
+                    }
         },
         gridLines: {
           drawTicks: true,
