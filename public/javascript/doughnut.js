@@ -1,7 +1,7 @@
 new Chart(document.getElementById("doughnut-chart"), {
   type: 'doughnut',
   data: {
-    labels: ["Open", "Pending", "Funded", "Void",],
+    labels: ["Open", "Pending", "Funded", "Void"],
     datasets: [
       {
         label: "Population (millions)",
